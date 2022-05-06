@@ -1,0 +1,397 @@
+/* ----RESET---- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+background-color: #182325;
+font-family: 'Lora', serif;
+}
+
+/* ----HEADER--- */
+
+
+header {
+    width: 65%;
+    height: 85px;
+    
+}
+header .logo {
+    margin: 25px;
+    position: absolute;
+}
+header .logo  h1{
+    color: white;
+    font-size:35px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: auto;
+    
+}
+
+
+header .logo h1 span {
+    color: #f30e12;
+}
+
+/* ----SECTION--- */
+
+
+section {
+    width:100%;
+    height:500px;
+    display: flex;
+    justify-content: right;
+}
+
+section .encriptador {
+    width: 50%;
+    height:85%;
+    margin-top: 25px;
+    margin-left: 250px;
+    padding: 50px 0px 50px 50px;
+    
+}
+
+
+section .encriptador .input  {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius:25px;
+    height:400px;
+    
+}
+
+
+section .encriptador .input form .buttons h4 {
+    font-size:12px;
+    color: white;
+    margin-bottom:10px;
+    margin-left: 10px;
+}
+
+section .encriptador .input form .buttons h4 span {
+    color: white;
+    font-size:12px;
+}
+
+/* ----FORM---- */
+
+
+.input form {
+    margin-bottom: 35px;
+}
+
+
+.input form textarea {
+    width: 90%;
+    font-size: 35px;
+    background-color:transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    height:300px;
+    margin-bottom: 25px;
+    resize: none;
+    font-family: 'Lora', serif;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Lora', serif;  
+}
+
+button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    margin-right: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+   }
+   
+   button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+   }
+   
+   button:hover:before {
+    transform: translateX(15em);
+   } 
+
+   .desencript img {
+       margin-right: 95px;
+       margin-top: 45px;
+
+   }
+   
+   #button {
+    display: none;
+}
+    #des {
+        width: 100%;
+        height: 350px;
+        border: 0;
+        resize: none;
+        outline: none;
+        background-color:transparent;
+        color: white;
+        font-size: 25px;
+        font-family: 'Lora', serif;
+        display:none; 
+    }
+    
+
+/*----- FOOTER -----*/
+
+   footer {
+       width:100%;
+       height:50px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr;
+       background-color: #1c2e31;
+   }
+
+   footer .logofoot {
+       margin: 15px;
+   }
+
+   footer .logofoot h3 {
+       color: white;
+       font-size:12px;
+       font-weight: normal;
+   }
+
+   footer .logofoot h3 span {
+    font-size: 12px;
+    color: white;
+    margin-right: 5px;
+   }
+
+   footer .redes-sociales {
+       margin: 10px;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   footer .redes-sociales h4 {
+       color: white;
+       font-size:14px;
+       font-weight: normal;
+       margin-right: 15px;
+       border-bottom: 1px solid white;
+   }
+
+   footer .redes-sociales i {
+       color: white;
+       margin-right: 10px;
+   }
+
+   @media all and (min-device-width: 320px) and (max-device-width:480px){
+    header {
+        width: 100%;
+        height:43px;
+    }
+
+    header .logo {
+        text-align: center;
+        position:inherit;
+    }
+       #img {
+           display:none
+       }
+
+       section  {
+        width: 100%;
+        align-items: center;
+        height: 350px;
+       }
+       section .encriptador {
+           width: 100%;
+           padding: 50px 35px 50px 50px;
+           margin-left: 25px;
+           margin-top: 10px;
+       }
+       footer {
+           position: absolute;
+           bottom: 0;
+       }
+       .input form textarea {
+        height: 100px;
+        font-size: 18px;
+    }
+       #des {
+        font-size: 15px;
+        margin-top: 45px;
+        height: 200px;
+
+       }
+
+       button {
+        margin-top:10px;
+        font-size:10px;
+       }
+   }
+
+   @media all and (min-device-width: 480px) and (max-device-width:600px) {
+    header {
+        width: 100%;
+        height:43px;
+    }
+
+    header .logo {
+        text-align: center;
+        position:inherit;
+    }
+       #img {
+           display: none;
+       }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #img {
+        margin-top:90px;
+    }
+    section {
+        gap: 25px;
+        height:463px;
+    }
+    section .encriptador .input {
+        height:388px;
+    }
+
+    .input form textarea {
+        height: 150px;
+        font-size: 20px;
+    }
+    section .encriptador {
+        width: 100%;
+        margin-left: 50px;
+    }
+     #des {
+        font-size: 20px;
+        margin-top: 90px;
+        height: 200px;
+        margin-right: 90px;
+    }
+   }
+
+   @media all and (min-device-width: 600px) and (max-device-width:720px) {
+    
+    header {
+        width: 100%;
+        height:43px;
+    }
+
+    header .logo {
+        text-align: center;
+        position:inherit;
+    }
+    #img {
+        display: none;
+    }
+    section {
+        height: 250px;
+        justify-content: center;
+        
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+    ::placeholder {
+        text-align: start;
+    }
+    .input form textarea {
+        height: 150px;
+        font-size: 20px;
+    }
+    section .encriptador {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #des {
+        font-size: 20px;
+        margin-top: 80px; 
+        height: 200px; 
+        margin-right: 90px;
+    }
+   }
+    @media all and (min-device-width: 720px) and (max-device-width:1024px) {
+        header {
+            width: 100%;
+            height:43px;
+        }
+    
+        header .logo {
+            text-align: center;
+            position:inherit;
+        }
+        section {
+            gap:25px;
+            height: 480px;
+        }
+        #img {
+            margin-right: 45px;
+        }
+        .input form textarea {
+            height: 150px;
+            font-size: 20px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+        #des {
+            font-size: 20px;
+            margin-top: 80px; 
+            height: 200px; 
+            margin-right: 90px;
+        }
+        section .encriptador {
+            width: 100%;
+            margin-left: 90px;
+        }
+   } 
+
+
+  
+
+
+
+
+  
+
