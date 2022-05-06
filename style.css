@@ -234,7 +234,8 @@ button {
        section  {
         width: 100%;
         align-items: center;
-        height: 350px;
+        height: 428px;
+        text-align: inherit;
        }
        section .encriptador {
            width: 100%;
@@ -281,18 +282,16 @@ button {
         bottom: 0;
     }
     
-    #img {
-        margin-top:90px;
-    }
     section {
-        gap: 25px;
-        height:463px;
-        align-items:center;
+    gap: 25px;
+    height: 428px;
+    align-items: center;
+    text-align: inherit;
     }
+   
     section .encriptador .input {
-        height:388px;
+        height:380px;
     }
-
     .input form textarea {
         height: 150px;
         font-size: 20px;
@@ -320,13 +319,15 @@ button {
         text-align: center;
         position:inherit;
     }
+    
     #img {
         display: none;
     }
     section {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
+    height: 428px;
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
     }
     footer {
         position: absolute;
@@ -342,6 +343,10 @@ button {
     section .encriptador {
         width: 100%;
         margin-left: 50px;
+        text-align:center;
+    }
+    section .encriptador .input {
+        justify-items: center;
     }
 
     #des {
@@ -366,6 +371,9 @@ button {
             height: 480px;
             align-items: center;
             justify-content: center;
+        }
+        section .encriptador .input {
+            height: 380px;;
         }
         #img {
             margin-right: 45px;
